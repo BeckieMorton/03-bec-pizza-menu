@@ -1,4 +1,5 @@
 import { Pizza } from "./Pizza";
+import { Order } from "./Order";
 
 export const Menu = () => {
   const pizzaData = [
@@ -46,15 +47,24 @@ export const Menu = () => {
     },
   ];
 
+  const pizzas = pizzaData;
+  const numPizzas = pizzas.length;
+
+  console.log(`inside pizzas is:`, pizzas);
+
   return (
     <main className="menu">
       <h2>Our Menu</h2>
 
-      <ul className="pizzas">
-        {pizzaData.map((pizza) => (
-          <Pizza pizzaObject={pizza} key={pizza.name} />
-        ))}
-      </ul>
+      {numPizzas > 0 ? (
+        <ul className="pizzas">
+          {pizzas.map((pizza) => (
+            <Pizza pizzaObject={pizza} key={pizza.name} />
+          ))}
+        </ul>
+      ) : (
+        <p>We're still working on our menu, please come back later :)</p>
+      )}
 
       {/* <Pizza
         name="Pizza Spinachi"
