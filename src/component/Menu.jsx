@@ -1,5 +1,5 @@
+import React from "react";
 import { Pizza } from "./Pizza";
-import { Order } from "./Order";
 
 export const Menu = () => {
   const pizzaData = [
@@ -57,11 +57,17 @@ export const Menu = () => {
       <h2>Our Menu</h2>
 
       {numPizzas > 0 ? (
-        <ul className="pizzas">
-          {pizzas.map((pizza) => (
-            <Pizza pizzaObject={pizza} key={pizza.name} />
-          ))}
-        </ul>
+        <React.Fragment>
+          <p>
+            Authentic Italian cuisine, with 6 creative dishes to choose from.
+            All from our stone oven, all organic, all delicious.
+          </p>
+          <ul className="pizzas">
+            {pizzas.map((pizza) => (
+              <Pizza pizzaObject={pizza} key={pizza.name} />
+            ))}
+          </ul>
+        </React.Fragment>
       ) : (
         <p>We're still working on our menu, please come back later :)</p>
       )}
