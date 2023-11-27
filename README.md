@@ -1,11 +1,5 @@
-# React + Vite
+# The Ultimate React Course - Pizza Menu App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
+Udemy: https://www.udemy.com/course/the-ultimate-react-course
 
 ![Screenshot of Pizza App](/public/pizzas/screenshot.png?raw=true "Pizza Menu - React App")
